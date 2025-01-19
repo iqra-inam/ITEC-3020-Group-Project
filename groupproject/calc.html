@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GetFit</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ 
+    <div class="containernav">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+            <div class="col-md-3 mb-2 mb-md-0 text-center">
+                <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                    <img src="GETFITLogo.png" class="nav-link px-2 link-secondary no-link" alt="Logo" title="GetFit" height="100">
+                </a>
+            </div>
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="main.html" class="nav-link px-2 link-secondary">Home</a></li>
+                <li><a href="blogs.html" class="nav-link px-2">Blogs</a></li>
+                <li><a href="inbox.html" class="nav-link px-2">Inbox</a></li>
+                <li><a href="calc.html" class="nav-link px-2">Calculator</a></li>
+                <li><a href="recipe.html" class="nav-link px-2">Recipe</a></li>
+                <li><a href="workout.html" class="nav-link px-2">Workout Plans</a></li>
+                <li><a href="login.html" class="nav-link px-2">Login</a></li>
+                <li><a href="register.html" class="nav-link px-2">Register Now</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <input type="number" id="age" placeholder="Age">
+        <select id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <input type="number" id="height" placeholder="Height (cm)">
+        <input type="number" id="weight" placeholder="Weight (kg)">
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        <p id="result"></p>
+    </div>
+
+
+    <div class="container">
+        <h1>Ideal Weight Calculator</h1>
+        <input type="number" id="age-iw" placeholder="Age">
+        <select id="gender-iw">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <input type="number" id="height-iw" placeholder="Height (cm)">
+        <button onclick="calculateIdealWeight()">Calculate Ideal Weight</button>
+        <p id="result-iw"></p>
+    </div>
+
+
+
+    <div class="container">
+        <h1>Body Fat Calculator</h1>
+        <input type="number" id="age-bf" placeholder="Age">
+        <select id="gender-bf">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <input type="number" id="height-bf" placeholder="Height (cm)">
+        <input type="number" id="weight-bf" placeholder="Weight (kg)">
+        <input type="number" id="neck-bf" placeholder="Neck Circumference (cm)">
+        <input type="number" id="waist-bf" placeholder="Waist Circumference (cm)">
+        <button onclick="calculateBodyFat()">Calculate Body Fat</button>
+        <div id="result-container">
+            <p id="result-age"></p>
+            <p id="result-gender"></p>
+            <p id="result-bodyfat"></p>
+        </div>
+
+    <footer>
+        <p>&copy; 2024 TechTrio. All rights reserved.</p>
+        <address>
+            Written by Shezal, Iqra, Batul.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+    </footer>
+    <script src="script.js"></script> 
+</body>
+</html>

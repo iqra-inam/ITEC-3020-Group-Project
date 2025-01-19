@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GetFit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body style="background-color: #587a70;">
+    <div class="containernav">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+            <div class="col-md-3 mb-2 mb-md-0 text-center">
+                <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                    <img src="GETFITLogo.png" class="nav-link px-2 link-secondary no-link" alt="Logo" title="GetFit" height="100">
+                </a>
+            </div>
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="main.html" class="nav-link px-2 link-secondary">Home</a></li>
+                <li><a href="blogs.html" class="nav-link px-2">Blogs</a></li>
+                <li><a href="inbox.html" class="nav-link px-2">Inbox</a></li>
+                <li><a href="calc.html" class="nav-link px-2">Calculator</a></li>
+                <li><a href="recipe.html" class="nav-link px-2">Recipe</a></li>
+                <li><a href="workout.html" class="nav-link px-2">Workout Plans</a></li>
+                <li><a href="login.html" class="nav-link px-2">Login</a></li>
+                <li><a href="register.html" class="nav-link px-2">Register Now</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <fieldset>
+            <legend>
+                <h2>Blog Posts</h2>
+            </legend>
+            <form id="form">
+                <label for="blog">Blog Post:</label><br>
+                <input type="text" id="blog" name="blog" placeholder="Enter blog title"><br><br>
+                <label for="message">Travel Description:</label><br>
+                <textarea id="message" name="message" placeholder="Enter travel description"></textarea><br><br>
+                <label for="image">Image:</label><br>
+                <input type="file" id="image" accept="image/*" name="image" placeholder="Choose image"><br><br>
+           
+                <div class="buttons-container">
+                    <div class="button-wrapper">
+                        <input type="button" value="Submit" id="upload" onclick="Submit()">
+                    </div>
+                </div>
+               
+                <p id="msg" style="text-align: left;"></p>
+            </form>
+        </fieldset>
+    </div>
+    <br>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TechTrio. All rights reserved.</p>
+        <address>
+            Written by Shezal, Iqra, Batul.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
